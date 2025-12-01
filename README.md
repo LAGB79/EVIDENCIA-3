@@ -36,7 +36,7 @@ Sigue estos 6 sencillos pasos para correr la aplicación en tu computadora.
 
 ### Paso 1: Descarga el Código
 Abre la Terminal y descarga el proyecto:
-git clone [https://github.com/KevCeres/LEBAB-WEB.git](https://github.com/KevCeres/LEBAB-WEB.git)
+git clone [https://github.com/LAGB79/EVIDENCIA-3.git](https://github.com/LAGB79/EVIDENCIA-3.git)
 cd LEBAB-WEB
 
 ### Paso 2: Prepara el Servidor
@@ -45,7 +45,7 @@ cd backend
 npm install
 
 ### Paso 3: Configura la Base de Datos
-Abre tu gestor de base de datos y crea una base de datos llamada LEBAB.
+Abre tu gestor de base de datos y crea una base de datos llamada LEBABWEB.
 Ejecuta el script SQL que crea todas las tablas y los datos iniciales de prueba.
 
 ### Paso 4: Configurar Variables de Entorno
@@ -53,7 +53,7 @@ Crea un archivo llamado .env dentro de la carpeta /backend y pon tus claves de M
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD="tu_contraseña_mysql"
-DB_NAME=LEBAB
+DB_NAME=LEBABWEB
 PORT=3000
 
 ### Paso 5: Enciende el Servidor

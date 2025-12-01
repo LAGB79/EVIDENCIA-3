@@ -1,0 +1,23 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias de Frontend (Node.js/Angular/React)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+
+# Dependencias de Backend (Si es Java)
+backend/target/
+backend/*.class
+backend/.mvn/
+backend/*.log
+
+# Dependencias de Backend (Si es Node.js)
+backend/node_modules/
+backend/.env
+
+# Configuración de editores
+.vscode/
+.idea/
