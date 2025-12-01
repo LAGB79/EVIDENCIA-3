@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEBAB - Historial de Movimientos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Historial de Movimientos del Inventario</h1>
+        <button onclick="window.location.href='productos.html'" class="btn-secundario">Volver a Productos</button>
+    </header>
+
+    <div id="app-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>Producto</th><th>Tipo</th><th>Cantidad</th><th>Fecha</th><th>Responsable</th><th>Nota</th><th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaHistorialBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="../js/historial.js"></script>
+</body>
+</html>

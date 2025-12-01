@@ -1,0 +1,40 @@
+<div class="modal-content" id="form-producto-content">
+    <span class="close-button">&times;</span>
+    <h3><span id="form-producto-titulo">Crear Nuevo Producto</span></h3>
+    <form id="form-producto">
+        <input type="hidden" id="productoId">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" required>
+
+        <label for="unidad">Unidad:</label>
+        <select id="unidad">
+            <option value="PZA">PZA</option>
+            <option value="KG">KG</option>
+            <option value="LT">LT</option>
+            <option value="ML">ML</option>
+            <option value="G">G</option>
+            <option value="PAQ">PAQ</option>
+            <option value="ROL">ROL</option>
+            <option value="PAR">PAR</option>
+            <option value="CJA">CJA</option>
+        </select>
+
+        <label for="stock">Stock Inicial:</label>
+        <input type="number" id="stock" value="0" min="0" required>
+
+        <label for="minimo">Mínimo:</label>
+        <input type="number" id="minimo" value="1" min="0" required>
+
+        <label for="costoUnitario">Costo Unitario:</label>
+        <input type="number" id="costoUnitario" value="0.00" step="0.01" min="0" required>
+
+        <label for="precioDeVenta">Precio Venta:</label>
+        <input type="number" id="precioDeVenta" value="0.00" step="0.01" min="0" required>
+
+        <button type="submit" id="btnGuardarProducto" style="margin-top: 15px;">Guardar</button>
+    </form>
+</div>

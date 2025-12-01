@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEBAB - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+    <div id="login-container">
+         <img src="../css/img/Logo.jpeg" alt="Logo de la Empresa" id="logo-empresa">
+        <h2>Ingreso al Sistema LEBAB</h2>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Ingresar</button>
+        </form>
+        <p id="error-message" style="color: #dc3545; margin-top: 15px;"></p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

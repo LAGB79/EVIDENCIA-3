@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEBAB - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Usuarios</h1>
+        <button onclick="window.location.href='productos.html'" class="btn-secundario">Volver a Productos</button>
+    </header>
+
+    <div id="app-container">
+        <div class="panel-botones">
+            <button id="btnCrearUsuario">Crear Nuevo Usuario</button>
+            <button id="btnEliminarUsuario" class="btn-eliminar">Eliminar Usuario</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>Nombre de Usuario</th><th>Rol</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuariosBody">
+                </tbody>
+        </table>
+    </div>
+
+    <div id="modalUsuario" class="modal"></div>
+
+    <script src="../js/gestionUsuarios.js"></script>
+</body>
+</html>

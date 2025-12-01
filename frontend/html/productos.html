@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEBAB - Productos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../css/img/Logo.jpeg" alt="Logo de la Empresa" id="logo-empresa">
+        <h1>LEBAB Inventario de Productos - <span id="user-info"></span></h1>
+        <div>
+            <button id="btn-gestion-usuarios" style="display:none;">Gestión de Usuarios</button>
+            <button id="btn-ver-historial">Ver Historial</button>
+            <button id="btn-cerrar-sesion" class="btn-secundario">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div id="app-container">
+        <div class="controles-superiores">
+            <label>Búsqueda:</label>
+            <input type="text" id="txtBusqueda" placeholder="Nombre o Categoría">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnLimpiar">Atras</button>
+            <label>
+                <input type="checkbox" id="chkSoloBajoStock"> 
+                Solo Bajo Stock
+            </label>
+        </div>
+
+        <div class="panel-botones">
+            <button id="btnCrear">Crear Producto</button>
+            <button id="btnEditar">Editar Producto</button>
+            <button id="btnEliminar">Eliminar Producto</button>
+            <button id="btnMovimiento">Registrar Movimiento</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>Nombre</th><th>Categoría</th><th>Unidad</th><th>Stock</th><th>Mínimo</th><th>Costo</th><th>Precio Venta</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductosBody">
+                </tbody>
+        </table>
+    </div>
+
+    <div id="modalProducto" class="modal"></div>
+    <div id="modalMovimiento" class="modal"></div>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/formProducto.js"></script>
+    <script src="../js/movimientos.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6; 
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #777f42 0%, #5c6434 100%);
+}
+
+
+#login-container {
+    background: #fff;
+    padding: 50px 40px; 
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 800px !important; 
+    max-width: 90% !important; 
+    
+    text-align: center;
+}
+#app-container {
+padding: 30px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #5c6434;
+color: white;
+padding: 14px 22px;
+margin-bottom: 22px;
+}
+
+header button {
+    background-color: #1D3044;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+header button:hover {
+    background-color: grey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e9ecef;
+    font-weight: 600; 
+    color: #495057;
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+.bajo-stock {
+    background-color: #f7a7a7 !important; 
+    color: #800000;
+    font-weight: bold;
+}
+
+.tabla-scroll {
+    max-height: 55vh; 
+    overflow-y: auto;  
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.tabla-scroll table thead th {
+    position: sticky; 
+    top: 0;
+    z-index: 10;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1); 
+}
+
+.controles-superiores {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.panel-botones {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #4C443C;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+button:hover {
+    background-color: grey;
+}
+
+.btn-eliminar { background-color: #dc3545; }
+.btn-eliminar:hover { background-color: #a71d2a; }
+.btn-secundario { background-color: #6c757d; }
+.btn-secundario:hover { background-color: #5a6268; }
+
+input[type="text"], 
+input[type="password"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%; 
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+    min-height: 80px; 
+    resize: vertical;
+}
+
+#form-producto label, #form-movimiento label, #form-crear-usuario label {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); 
+    display: none; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    
+    width: 90%; 
+    max-width: 480px; 
+}
+
+#tablaProductosBody tr.selected {
+    background-color: #d1ecf1; 
+    border: 2px solid #007bff; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+#tablaProductosBody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+#tablaProductosBody tr.selected, 
+#tablaUsuariosBody tr.selected, 
+#tablaHistorialBody tr.selected 
+{
+    background-color: #d1ecf1; 
+    border: 2px solid #007bff; 
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+#login-container h2 {
+    font-size: 30px; 
+    color: #5c6434; 
+    margin-bottom: 30px; 
+    font-weight: 600;
+}
+
+#login-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px; 
+    font-size: 25px; 
+    font-weight: 500;
+    text-align: left; 
+}
+
+#login-form input {
+    padding: 12px; 
+    font-size: 20px; 
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+}
+
+#login-form button[type="submit"] {
+    display: block; 
+    width: 100%;    
+    padding: 15px; 
+    font-size: 25px; 
+    margin-top: 20px;
+
+}
+
+input[type="checkbox"] {
+    width: 25px; 
+    height: 25px; 
+    margin-right: 12px; 
+    vertical-align: middle;
+}
+
